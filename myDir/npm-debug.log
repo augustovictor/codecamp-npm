@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.5
+3 info using node@v4.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace/myDir',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/testingnpm/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle testingnpm@1.0.0~prepublish: testingnpm@1.0.0
+11 silly lifecycle testingnpm@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/testingnpm/1.0.0/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace/myDir' ]
+13 verbose tarball /home/ubuntu/.npm/testingnpm/1.0.0/package.tgz
+14 verbose folder /home/ubuntu/workspace/myDir
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/testingnpm/1.0.0/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd testingnpm@1.0.0
+18 verbose afterAdd /home/ubuntu/.npm/testingnpm/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/testingnpm/1.0.0/package/package.json written
+21 silly publish { name: 'testingnpm',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: ',-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     \'  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---\'     |  |    |  || .-. ||  ||  |\' .-. |`..\'  |  |  ||  |  \\  :|  `--,      \'  \'--\'\\|  |\' \'-\' \'\'  \'\'  \'\\ `-\' | .\'  /   |  ||  \'--\'  /|  `---.      `-----\'`--\' `---\'  `----\'  `---\'  `--\'    `--\'`-------\' `------\'     -----------------------------------------------------------------',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'node test.js' },
+21 silly publish   author: { name: 'victor augusto' },
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+21 silly publish   readme: '\n     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.\n    \'  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---\'\n    |  |    |  || .-. ||  ||  |\' .-. |`..\'  |  |  ||  |  \\  :|  `--, \n    \'  \'--\'\\|  |\' \'-\' \'\'  \'\'  \'\\ `-\' | .\'  /   |  ||  \'--\'  /|  `---.\n     `-----\'`--\' `---\'  `----\'  `---\'  `--\'    `--\'`-------\' `------\'\n    ----------------------------------------------------------------- \n\n\nWelcome to your Node.js project on Cloud9 IDE!\n\nThis chat example showcases how to use `socket.io` with a static `express` server.\n\n## Running the server\n\n1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.\n\n2) Alternatively you can launch the app from the Terminal:\n\n    $ node server.js\n\nOnce the server is running, open the project in the shape of \'https://projectname-username.c9.io/\'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   _id: 'testingnpm@1.0.0',
+21 silly publish   _shasum: '3ab1ff8a44aed78bc9ab81bb4ce67627e06944da',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name testingnpm
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://localhost:15443/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'testingnpm',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'testingnpm',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://localhost:15443/testingnpm
+28 verbose publish registryBase http://localhost:15443/
+29 silly publish uploading /home/ubuntu/.npm/testingnpm/1.0.0/package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+30 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/lib/publish.js:137:14
+30 verbose stack     at mapToRegistry (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+30 verbose stack     at publish_ (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/lib/publish.js:106:3)
+30 verbose stack     at Array.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at LOOP (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+30 verbose stack     at chain (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/lib/publish.js:72:5
+30 verbose stack     at RES (/home/ubuntu/.nvm/versions/node/v4.4.0/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+31 verbose cwd /home/ubuntu/workspace/myDir
+32 error Linux 4.2.0-c9
+33 error argv "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm" "publish"
+34 error node v4.4.0
+35 error npm  v3.8.5
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]
